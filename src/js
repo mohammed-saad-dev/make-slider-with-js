@@ -1,0 +1,69 @@
+let members = [
+    {
+    name:"osd",
+    age:17,
+    job:"front end developer",
+},
+
+{
+    name:"mohammed",
+    age:20,
+    job:"back-end developer",
+}
+,{
+    name:"saad",
+    age:40,
+    job:"back-end developer",
+},
+{
+    name:"ali",
+    age:10,
+    job:"back-end developer",
+}
+]
+ //get element from html
+ let nameMember = document.getElementById("name");
+ let ageMember = document.getElementById("age");
+ let jobMember = document.getElementById("job");
+ let btn = document.getElementById("btn");
+ let btn1 = document.getElementById("btn1");
+ 
+let current = 0;
+
+
+
+nameMember.innerHTML = members[current].name;
+
+ageMember.innerHTML = members[current].age;
+
+jobMember.innerHTML = members[current].job;
+
+
+btn.addEventListener('click',function(){
+
+    current++;
+
+    
+    nameMember.innerHTML = members[current].name;
+    ageMember.innerHTML = members[current].age;
+    jobMember.innerHTML = members[current].job;
+  
+
+   console.log(current)
+})
+ 
+
+
+btn1.addEventListener('click',function(){
+
+    current--;
+
+    
+    nameMember.innerHTML = members[current].name;
+    ageMember.innerHTML = members[current].age;
+    jobMember.innerHTML = members[current].job;
+  
+
+   console.log(current)
+})
+ 
