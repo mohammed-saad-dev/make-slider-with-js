@@ -63,6 +63,10 @@ btn1.addEventListener('click',function(){
 
     current--;
 
+    if(current < 0){
+        current = members.length -1
+    }
+
     
     nameMember.innerHTML = members[current].name;
     ageMember.innerHTML = members[current].age;
